@@ -1,18 +1,18 @@
 server:
-  port: 8766
+  port: 8761
 
 spring:
   application:
     name: eureka-server
 eureka:
   instance:
-    hostname: localhost-git
+    hostname: localhost
     preferIpAddress: true
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-       defaultZone: http://localhost-git:8761/eureka/ # one eureka server
+       defaultZone: http://localhost:8761/eureka/ # one eureka server
   server:
       waitTimeInMsWhenSyncEmpty: 0
       enableSelfPreservation: false
