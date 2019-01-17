@@ -6,13 +6,13 @@ spring:
     name: eureka-server
 eureka:
   instance:
-    hostname: localhost
+    hostname: eureka-peer1
     preferIpAddress: true
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-       defaultZone: http://localhost:8762/eureka/,http://localhost:8763/eureka/
+       defaultZone: http://eureka-peer2:8762/eureka/,http://eureka-peer3:8763/eureka/
   server:
       waitTimeInMsWhenSyncEmpty: 0
       enableSelfPreservation: false
