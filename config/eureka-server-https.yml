@@ -6,6 +6,13 @@ server:
     key-store-password: server1111
     key-store-type: PKCS12
     key-alias: server
+spring:
+  security:
+    basic:
+      enabled: true
+    user:
+      name: admin
+      password: Xk38CNHigBP5jK75
 eureka:
   instance:
     hostname: localhost
