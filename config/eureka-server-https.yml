@@ -3,7 +3,7 @@ server:
   ssl:
     enabled: true
     key-store: classpath:eurekaserver.p12
-    key-store-password: eureka1111
+    key-store-password: server1111
     key-store-type: PKCS12
     key-alias: server
 eureka:
